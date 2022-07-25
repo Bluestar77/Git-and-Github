@@ -1,0 +1,38 @@
+버전 관리 : 내가 원하는 시점(버전)으로 이동할 수 있게 해 주는 것
+
+내가 원하는 시점마다 깃발을 꽂고, 깃발이 꽂힌 시점으로 자유롭게 이동
+-> 소스코드 오류가 일어난다면 바로 전에 꽂은 깃발 시점으로 돌아가면 됨
+
+Git : 소스코드 버전 관리 시스템
+Github : Git으로 관리하는 프로젝트를 올려둘 수 있는 Git 호스팅 사이트 중 하나
+(Github, GitLab, BitButcket 등)
+-> 시간, 공간의 제약 없이 협업 가능
+
+
+로컬저장소 : Git을 통해 버전 관리가 이뤄질 내 컴퓨터에 있는 폴더
+일반 프로젝트 폴더에 'git init' 명령어를 통해 로컬저장소를 만든다 (-> [.git] 폴더)
+[.git폴더] 에는 git으로 생성한 버전들의 정보와 원격저장소 주소 등이 들어있다.
+
+커밋(commit) : 생성된 각 버전
+1. 버전 관리를 위해 내 정보를 등록
+2. 커밋에 추가할 파일을 선택
+3, 상세정보 추가
+
+
+GitHub 원격저장소에 커밋 올리기
+-> 주소 복사하기
+1. 원격저장소 주소 입력
+$ git remote add origin https://GitHub.com/Bluestar77/(name).git
+
+2. push 명령어로 원격저장소에 올리기
+$ git push origin master
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+GitHub 원격저장소에서 커밋 내려받기
+-> 주소 복사하기
+1. 주소 복사하기
+$ git remote add origin https://GitHub.com/Bluestar77/(name).git
+
+2. clone 명령어로 원격저장소에서 내려받기
+$ git clone https://GitHub.com/Bluestar77/(name).git . (한칸 띄고 마침표!) 
